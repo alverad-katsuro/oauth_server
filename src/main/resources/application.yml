@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    default: dev 
+    #active: @activatedProperties@
+  application:
+    name: OAUTH SERVER
+
+  data:
+    web:
+      pageable:
+        max-page-size: 100
+  jpa:
+    properties:
+      hibernate:
+        "[generate_statistics]" : true        
+
+server:
+  port: 10000
+  compression:
+    enabled: true
+    min-response-size: 2048
+    mime-types:
+    - application/json,application/xml,text/html,text/xml,text/plain,application/javascript,text/css
+
+logging:
+  file:
+    name: defensoria.log
+    path: /var/log
+
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
