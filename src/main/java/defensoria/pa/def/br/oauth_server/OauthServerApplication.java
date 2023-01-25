@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-import defensoria.pa.def.br.oauth_server.config.RsaKeyProperties;
+import defensoria.pa.def.br.oauth_server.util.RsaKeyProperties;
 
 @SpringBootApplication
 @EnableConfigurationProperties(RsaKeyProperties.class)

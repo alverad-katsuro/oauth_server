@@ -29,7 +29,7 @@ public class AuthenticationController {
         return ResponseEntity.ok(authenticationService.authenticate(authenticationRequest));
     }   
     
-    @ResponseStatus(HttpStatus.FORBIDDEN)
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
     @ExceptionHandler(BadCredentialsException.class)
     public String handleValidationExceptions() {
         return "Usuario ou senha incorretos.";

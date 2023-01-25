@@ -24,9 +24,9 @@ server:
 
 logging:
   file:
-    name: defensoria.log
+    name: /var/log/defensoria.log
     path: /var/log
 
 rsa:
-  private-key: classpath:certs/private.pem
   public-key: classpath:certs/public.pem
+  private-key: classpath:certs/private.pem

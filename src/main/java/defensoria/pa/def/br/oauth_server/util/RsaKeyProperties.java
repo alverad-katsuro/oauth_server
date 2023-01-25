@@ -1,4 +1,4 @@
-package defensoria.pa.def.br.oauth_server.config;
+package defensoria.pa.def.br.oauth_server.util;
 
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
