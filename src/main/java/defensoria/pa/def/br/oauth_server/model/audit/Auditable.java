@@ -18,7 +18,6 @@ import jakarta.persistence.TemporalType;
 import lombok.Data;
 
 @Data
-//@Audited
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public class Auditable {

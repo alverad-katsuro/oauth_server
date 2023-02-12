@@ -1,4 +1,4 @@
-package defensoria.pa.def.br.oauth_server.config;
+package defensoria.pa.def.br.oauth_server.config.jwt;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  oauthserver:
+    container_name: oauthserver
+    build:
+      context: ./
+    image: oauthserver:latest
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - 9500:9500
+    networks:
+      - spring-cloud-network
+networks:
+  spring-cloud-network:
+    driver: bridge
+
